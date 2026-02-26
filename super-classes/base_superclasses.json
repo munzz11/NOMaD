@@ -1,0 +1,12 @@
+{
+  "name": "Standard Parent Class Grouping",
+  "groups": [
+    { "name": "boat", "subclass_ids": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18] },
+    { "name": "dayshape", "subclass_ids": [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29] },
+    { "name": "flag", "subclass_ids": [30, 31, 32] },
+    { "name": "lights", "subclass_ids": [33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44] },
+    { "name": "structure", "subclass_ids": [45, 46, 47, 48, 49, 50, 51] },
+    { "name": "nav aid", "subclass_ids": [52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65] },
+    { "name": "buoy", "subclass_ids": [66, 67, 68] }
+  ]
+}

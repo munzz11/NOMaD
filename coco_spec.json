@@ -1,0 +1,365 @@
+{
+  "info": {
+    "description": "COCO format specification template for Marine Object Detection Dataset",
+    "version": "1.2.0",
+    "year": 2026,
+    "contributor": "ASV Navigation Research",
+    "date_created": "2026"
+  },
+  "license": [
+    {
+      "id": 1,
+      "name": "Research Use",
+      "url": ""
+    }
+  ],
+  "categories": [
+    {
+      "id": 0,
+      "name": "boat",
+      "supercategory": "boat"
+    },
+    {
+      "id": 1,
+      "name": "boat_tug",
+      "supercategory": "boat"
+    },
+    {
+      "id": 2,
+      "name": "boat_sailboat_under_power",
+      "supercategory": "boat"
+    },
+    {
+      "id": 3,
+      "name": "boat_sailboat_under_sail",
+      "supercategory": "boat"
+    },
+    {
+      "id": 4,
+      "name": "boat_submarine",
+      "supercategory": "boat"
+    },
+    {
+      "id": 5,
+      "name": "boat_warship",
+      "supercategory": "boat"
+    },
+    {
+      "id": 6,
+      "name": "boat_merchant_ship",
+      "supercategory": "boat"
+    },
+    {
+      "id": 7,
+      "name": "boat_commercial_fishing_boat",
+      "supercategory": "boat"
+    },
+    {
+      "id": 8,
+      "name": "boat_recreational_fishing_boat",
+      "supercategory": "boat"
+    },
+    {
+      "id": 9,
+      "name": "boat_pleasure_craft",
+      "supercategory": "boat"
+    },
+    {
+      "id": 10,
+      "name": "boat_personal_watercraft",
+      "supercategory": "boat"
+    },
+    {
+      "id": 11,
+      "name": "boat_kayak_canoe",
+      "supercategory": "boat"
+    },
+    {
+      "id": 12,
+      "name": "boat_seaplanes",
+      "supercategory": "boat"
+    },
+    {
+      "id": 13,
+      "name": "boat_ferry",
+      "supercategory": "boat"
+    },
+    {
+      "id": 14,
+      "name": "boat_barge",
+      "supercategory": "boat"
+    },
+    {
+      "id": 15,
+      "name": "boat_dredger",
+      "supercategory": "boat"
+    },
+    {
+      "id": 16,
+      "name": "boat_law_enforcement",
+      "supercategory": "boat"
+    },
+    {
+      "id": 17,
+      "name": "boat_unclassified_boat",
+      "supercategory": "boat"
+    },
+    {
+      "id": 18,
+      "name": "boat_drilling_ship",
+      "supercategory": "boat"
+    },
+    {
+      "id": 19,
+      "name": "dayshape",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 20,
+      "name": "dayshape_not_under_command",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 21,
+      "name": "dayshape_restricted_in_ability_to_maneuver",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 22,
+      "name": "dayshape_constrained_by_draft",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 23,
+      "name": "dayshape_pilot_vessel_on_duty",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 24,
+      "name": "dayshape_anchored",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 25,
+      "name": "dayshape_vessel_under_sail_and_power",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 26,
+      "name": "dayshape_towing_or_towed_vessel",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 27,
+      "name": "dayshape_fishing_with_restricted_maneuverability",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 28,
+      "name": "dayshape_minesweeping",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 29,
+      "name": "dayshape_aground",
+      "supercategory": "dayshape"
+    },
+    {
+      "id": 30,
+      "name": "flag",
+      "supercategory": "flag"
+    },
+    {
+      "id": 31,
+      "name": "flag_dive_flag",
+      "supercategory": "flag"
+    },
+    {
+      "id": 32,
+      "name": "flag_pilot_flag",
+      "supercategory": "flag"
+    },
+    {
+      "id": 33,
+      "name": "lights",
+      "supercategory": "lights"
+    },
+    {
+      "id": 34,
+      "name": "lights_power_driven_vessels",
+      "supercategory": "lights"
+    },
+    {
+      "id": 35,
+      "name": "lights_power_driven_vessel_towing_<_200_m",
+      "supercategory": "lights"
+    },
+    {
+      "id": 36,
+      "name": "lights_power_driven_vessel_towing_>_200_m",
+      "supercategory": "lights"
+    },
+    {
+      "id": 37,
+      "name": "lights_fishing_trawler",
+      "supercategory": "lights"
+    },
+    {
+      "id": 38,
+      "name": "lights_fishing_not_trawling",
+      "supercategory": "lights"
+    },
+    {
+      "id": 39,
+      "name": "lights_not_under_command",
+      "supercategory": "lights"
+    },
+    {
+      "id": 40,
+      "name": "lights_restricted_in_ability_to_maneuver",
+      "supercategory": "lights"
+    },
+    {
+      "id": 41,
+      "name": "lights_constrained_by_draft",
+      "supercategory": "lights"
+    },
+    {
+      "id": 42,
+      "name": "lights_pilot_vessel_on_duty",
+      "supercategory": "lights"
+    },
+    {
+      "id": 43,
+      "name": "lights_anchored_or_aground",
+      "supercategory": "lights"
+    },
+    {
+      "id": 44,
+      "name": "structure",
+      "supercategory": "structure"
+    },
+    {
+      "id": 45,
+      "name": "structure_drilling_platform",
+      "supercategory": "structure"
+    },
+    {
+      "id": 46,
+      "name": "structure_piling",
+      "supercategory": "structure"
+    },
+    {
+      "id": 47,
+      "name": "structure_dock",
+      "supercategory": "structure"
+    },
+    {
+      "id": 48,
+      "name": "structure_pier",
+      "supercategory": "structure"
+    },
+    {
+      "id": 49,
+      "name": "structure_bridge",
+      "supercategory": "structure"
+    },
+    {
+      "id": 50,
+      "name": "structure_unknown_structure",
+      "supercategory": "structure"
+    },
+    {
+      "id": 51,
+      "name": "nav_aid",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 52,
+      "name": "nav_aid_port_side_green_floating_channel_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 53,
+      "name": "nav_aid_starboard_side_red_floating_channel_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 54,
+      "name": "nav_aid_yellow-floating-hazard-marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 55,
+      "name": "nav_aid_junction_preferred_channel_to_stbd",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 56,
+      "name": "nav_aid_junction_preferred_channel_to_port",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 57,
+      "name": "nav_aid_safe-water-floating-channel-marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 58,
+      "name": "nav_aid_regulatory_markers",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 59,
+      "name": "nav_aid_range_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 60,
+      "name": "nav_aid_lighthouse",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 61,
+      "name": "nav_aid_red_triangle_daymark",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 62,
+      "name": "nav_aid_green_square_daymark",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 63,
+      "name": "nav_aid_special_yellow_square_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 64,
+      "name": "nav_aid_special_yellow_triangle_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 65,
+      "name": "nav_aid_regulatory_marker",
+      "supercategory": "nav aid"
+    },
+    {
+      "id": 66,
+      "name": "buoy",
+      "supercategory": "buoy"
+    },
+    {
+      "id": 67,
+      "name": "buoy_mooring_ball",
+      "supercategory": "buoy"
+    },
+    {
+      "id": 68,
+      "name": "buoy_fishing_buoy",
+      "supercategory": "buoy"
+    }
+  ],
+  "images": [],
+  "annotations": []
+}
