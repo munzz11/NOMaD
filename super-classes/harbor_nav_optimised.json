@@ -1,0 +1,11 @@
+{
+  "name": "Harbor Nav Optimised",
+  "groups": [
+    { "name": "boat", "subclass_ids": [1, 2, 3, 7, 8, 9, 16, 17] },
+    { "name": "ship", "subclass_ids": [4, 5, 6, 13, 14, 15, 18] },
+    { "name": "personal_water_craft", "subclass_ids": [10, 11] },
+    { "name": "floating_nav_aid", "subclass_ids": [51, 52, 53, 54, 55, 56, 57, 58, 61, 62, 63, 64, 65] },
+    { "name": "buoy", "subclass_ids": [66, 67, 68] },
+    { "name": "structure", "subclass_ids": [44, 45, 46, 47, 48, 49, 50] }
+  ]
+}
