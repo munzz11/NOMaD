@@ -16,6 +16,50 @@ The accompanying annotated imagery contains maritime images from various sources
 
 The dataset uses the class IDs, names, and categories defined in **this repository**. Annotations are provided in COCO-style format; the category schema in this repo (see `coco_spec.json`) matches that structure.
 
+## Data path convention
+
+Scripts in this repository should resolve the dataset path in this order:
+1. `NOMAD_DATA_DIR` environment variable (if set)
+2. `./data` in this repository
+
+The `data/` directory is treated as a local cache and its contents are ignored by git.
+
+## Sync dataset locally
+
+### Requirements
+- Python 3.9+
+- `huggingface_hub` Python package
+
+Install dependency:
+
+```bash
+python -m pip install huggingface_hub
+```
+
+### Quickstart
+
+```bash
+# Optional: choose a custom location for dataset files
+export NOMAD_DATA_DIR="/path/to/nomad-data"
+
+# Download/update the dataset into NOMAD_DATA_DIR or ./data
+python scripts/sync_dataset.py
+```
+
+### Reproducible snapshot (recommended for experiments)
+
+```bash
+python scripts/sync_dataset.py --revision "<tag-or-commit>"
+```
+
+### Selective download
+
+```bash
+python scripts/sync_dataset.py \
+  --allow-pattern "annotations/*" \
+  --allow-pattern "images/train/*"
+```
+
 ## Repository contents
 
 | Asset | Description |
@@ -23,6 +67,8 @@ The dataset uses the class IDs, names, and categories defined in **this reposito
 | `detailed_class_specification.json` | Full 69-class spec with descriptions, visual characteristics, typical size range, and color markers. |
 | `coco_spec.json` | COCO-format category template for the same classes (for use with COCO-style annotations). |
 | `super-classes/` | JSON files that define groupings of the main spec into fewer classes (e.g. `base_superclasses.json`). One file per grouping scheme. |
+| `scripts/sync_dataset.py` | Downloads/syncs NOMaD dataset files from Hugging Face into local storage (`NOMAD_DATA_DIR` or `./data`). |
+| `data/` | Default local dataset cache location used by scripts (git-ignored except placeholders/docs). |
 
 ## Super-classing
 
