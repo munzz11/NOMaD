@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="horizon.jpeg" alt="Maritime horizon" width="960" />
+</p>
+
 # NOMaD – Navigational Objects Maritime (annotated) Dataset
 
 This repository contains the **annotation specification and class/super-class definitions** for NOMaD. It does not contain the imagery or annotations themselves; the distribution of those can be found below.

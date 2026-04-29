@@ -1,0 +1,79 @@
+# Dataset root directory relative to this repository
+path: data
+
+# Train/val/test sets: point to image-list text files or directories
+train: train.txt
+val: val.txt
+test: test.txt
+
+# Classes (69 NOMaD classes)
+names:
+  0: boat
+  1: boat_tug
+  2: boat_sailboat_under_power
+  3: boat_sailboat_under_sail
+  4: boat_submarine
+  5: boat_warship
+  6: boat_merchant_ship
+  7: boat_commercial_fishing_boat
+  8: boat_recreational_fishing_boat
+  9: boat_pleasure_craft
+  10: boat_personal_watercraft
+  11: boat_kayak_canoe
+  12: boat_seaplanes
+  13: boat_ferry
+  14: boat_barge
+  15: boat_dredger
+  16: boat_law_enforcement
+  17: boat_unclassified_boat
+  18: boat_drilling_ship
+  19: dayshape
+  20: dayshape_not_under_command
+  21: dayshape_restricted_in_ability_to_maneuver
+  22: dayshape_constrained_by_draft
+  23: dayshape_pilot_vessel_on_duty
+  24: dayshape_anchored
+  25: dayshape_vessel_under_sail_and_power
+  26: dayshape_towing_or_towed_vessel
+  27: dayshape_fishing_with_restricted_maneuverability
+  28: dayshape_minesweeping
+  29: dayshape_aground
+  30: flag
+  31: flag_dive_flag
+  32: flag_pilot_flag
+  33: lights
+  34: lights_power_driven_vessels
+  35: lights_power_driven_vessel_towing_<_200_m
+  36: lights_power_driven_vessel_towing_>_200_m
+  37: lights_fishing_trawler
+  38: lights_fishing_not_trawling
+  39: lights_not_under_command
+  40: lights_restricted_in_ability_to_maneuver
+  41: lights_constrained_by_draft
+  42: lights_pilot_vessel_on_duty
+  43: lights_anchored_or_aground
+  44: structure
+  45: structure_drilling_platform
+  46: structure_piling
+  47: structure_dock
+  48: structure_pier
+  49: structure_bridge
+  50: structure_unknown_structure
+  51: nav_aid
+  52: nav_aid_port_side_green_floating_channel_marker
+  53: nav_aid_starboard_side_red_floating_channel_marker
+  54: nav_aid_yellow-floating-hazard-marker
+  55: nav_aid_junction_preferred_channel_to_stbd
+  56: nav_aid_junction_preferred_channel_to_port
+  57: nav_aid_safe-water-floating-channel-marker
+  58: nav_aid_regulatory_markers
+  59: nav_aid_range_marker
+  60: nav_aid_lighthouse
+  61: nav_aid_red_triangle_daymark
+  62: nav_aid_green_square_daymark
+  63: nav_aid_special_yellow_square_marker
+  64: nav_aid_special_yellow_triangle_marker
+  65: nav_aid_regulatory_marker
+  66: buoy
+  67: buoy_mooring_ball
+  68: buoy_fishing_buoy
