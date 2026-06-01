@@ -1,9 +1,9 @@
 {
   "metadata": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "description": "Navigational Objects Maritime Annotated Dataset",
     "created_date": "2026",
-    "total_classes": 69,
+    "total_classes": 70,
     "parent_categories": 7
   },
   "classes": [
@@ -459,6 +459,15 @@
     },
     {
       "id": 50,
+      "name": "structure - wind turbine",
+      "parent_category": "structure",
+      "description": "Offshore or coastal wind turbine installation",
+      "visual_characteristics": "Tall tower with nacelle and rotating blades (or fixed hub when stopped); often in arrays; slender vertical profile above waterline",
+      "typical_size_range": "Tower height roughly 80-200+ meters (blade tip higher)",
+      "color_markers": "Often white or light gray tower; blades white or pale"
+    },
+    {
+      "id": 51,
       "name": "structure - unknown structure",
       "parent_category": "structure",
       "description": "Unidentified or unclassified structure",
@@ -467,7 +476,7 @@
       "color_markers": "Variable"
     },
     {
-      "id": 51,
+      "id": 52,
       "name": "nav aid",
       "parent_category": "nav aid",
       "description": "Generic navigation aid when specific type cannot be determined",
@@ -476,7 +485,7 @@
       "color_markers": "Variable"
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "nav aid - port side green floating channel marker",
       "parent_category": "nav aid",
       "description": "Green floating channel marker indicating port side of channel (US: keep to starboard)",
@@ -485,7 +494,7 @@
       "color_markers": "Green"
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "nav aid - starboard side red floating channel marker",
       "parent_category": "nav aid",
       "description": "Red floating channel marker indicating starboard side of channel (US: keep to port)",
@@ -494,7 +503,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "nav aid - yellow-floating-hazard-marker",
       "parent_category": "nav aid",
       "description": "Yellow floating marker indicating hazard or special area",
@@ -503,7 +512,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "nav aid - junction preferred channel to stbd",
       "parent_category": "nav aid",
       "description": "Junction marker indicating preferred channel to starboard",
@@ -512,7 +521,7 @@
       "color_markers": "Red and green"
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "nav aid - junction preferred channel to port",
       "parent_category": "nav aid",
       "description": "Junction marker indicating preferred channel to port",
@@ -521,7 +530,7 @@
       "color_markers": "Red and green"
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "nav aid - safe-water-floating-channel-marker",
       "parent_category": "nav aid",
       "description": "Safe water marker indicating navigable water all around",
@@ -530,7 +539,7 @@
       "color_markers": "Red and white"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "nav aid - regulatory markers",
       "parent_category": "nav aid",
       "description": "Regulatory marker indicating rules or restrictions",
@@ -539,7 +548,7 @@
       "color_markers": "White and orange"
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "nav aid - range marker",
       "parent_category": "nav aid",
       "description": "Range marker for alignment navigation",
@@ -548,7 +557,7 @@
       "color_markers": "Variable, often red or white"
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "nav aid - lighthouse",
       "parent_category": "nav aid",
       "description": "Lighthouse structure for navigation",
@@ -557,7 +566,7 @@
       "color_markers": "Variable, often white, red, or striped"
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "nav aid - red triangle daymark",
       "parent_category": "nav aid",
       "description": "Red triangular daymark for navigation",
@@ -566,7 +575,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "nav aid - green square daymark",
       "parent_category": "nav aid",
       "description": "Green square daymark for navigation",
@@ -575,7 +584,7 @@
       "color_markers": "Green"
     },
     {
-      "id": 63,
+      "id": 64,
       "name": "nav aid - special yellow square marker",
       "parent_category": "nav aid",
       "description": "Special yellow square marker",
@@ -584,7 +593,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 64,
+      "id": 65,
       "name": "nav aid - special yellow triangle marker",
       "parent_category": "nav aid",
       "description": "Special yellow triangle marker",
@@ -593,7 +602,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 65,
+      "id": 66,
       "name": "nav aid - regulatory marker",
       "parent_category": "nav aid",
       "description": "Regulatory marker (alternative classification)",
@@ -602,7 +611,7 @@
       "color_markers": "White and orange"
     },
     {
-      "id": 66,
+      "id": 67,
       "name": "buoy",
       "parent_category": "buoy",
       "description": "Generic buoy when specific type cannot be determined",
@@ -611,7 +620,7 @@
       "color_markers": "Variable"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "buoy - mooring ball",
       "parent_category": "buoy",
       "description": "Mooring ball for vessel mooring",
@@ -620,7 +629,7 @@
       "color_markers": "Often white, blue, or yellow"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "buoy - fishing buoy",
       "parent_category": "buoy",
       "description": "Fishing buoy marking fishing gear or trap",

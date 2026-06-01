@@ -3,7 +3,7 @@
 
 Input archives may use a local 0..N-1 renumbering for category_id. The script maps each
 annotation to canonical NOMaD spec class ids (coco_spec.json) by looking up the class name
-from the input ``categories`` list, then applies superclass remapping to subclass_ids (0-68).
+from the input ``categories`` list, then applies superclass remapping to subclass_ids (0-69).
 """
 
 from __future__ import annotations
@@ -59,7 +59,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--coco-spec",
         type=Path,
         default=None,
-        help=f"NOMaD canonical class list (name -> id 0-68). Default: {_DEFAULT_COCO_SPEC}",
+        help=f"NOMaD canonical class list (name -> id 0-69). Default: {_DEFAULT_COCO_SPEC}",
     )
     parser.add_argument(
         "--unknown-name",

@@ -1,7 +1,7 @@
 {
   "info": {
     "description": "COCO format specification template for Marine Object Detection Dataset",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "year": 2026,
     "contributor": "ASV Navigation Research",
     "date_created": "2026"
@@ -266,96 +266,101 @@
     },
     {
       "id": 50,
-      "name": "structure_unknown_structure",
+      "name": "structure_wind_turbine",
       "supercategory": "structure"
     },
     {
       "id": 51,
+      "name": "structure_unknown_structure",
+      "supercategory": "structure"
+    },
+    {
+      "id": 52,
       "name": "nav_aid",
       "supercategory": "nav aid"
     },
     {
-      "id": 52,
+      "id": 53,
       "name": "nav_aid_port_side_green_floating_channel_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 53,
+      "id": 54,
       "name": "nav_aid_starboard_side_red_floating_channel_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 54,
+      "id": 55,
       "name": "nav_aid_yellow-floating-hazard-marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 55,
+      "id": 56,
       "name": "nav_aid_junction_preferred_channel_to_stbd",
       "supercategory": "nav aid"
     },
     {
-      "id": 56,
+      "id": 57,
       "name": "nav_aid_junction_preferred_channel_to_port",
       "supercategory": "nav aid"
     },
     {
-      "id": 57,
+      "id": 58,
       "name": "nav_aid_safe-water-floating-channel-marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 58,
+      "id": 59,
       "name": "nav_aid_regulatory_markers",
       "supercategory": "nav aid"
     },
     {
-      "id": 59,
+      "id": 60,
       "name": "nav_aid_range_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 60,
+      "id": 61,
       "name": "nav_aid_lighthouse",
       "supercategory": "nav aid"
     },
     {
-      "id": 61,
+      "id": 62,
       "name": "nav_aid_red_triangle_daymark",
       "supercategory": "nav aid"
     },
     {
-      "id": 62,
+      "id": 63,
       "name": "nav_aid_green_square_daymark",
       "supercategory": "nav aid"
     },
     {
-      "id": 63,
+      "id": 64,
       "name": "nav_aid_special_yellow_square_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 64,
+      "id": 65,
       "name": "nav_aid_special_yellow_triangle_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 65,
+      "id": 66,
       "name": "nav_aid_regulatory_marker",
       "supercategory": "nav aid"
     },
     {
-      "id": 66,
+      "id": 67,
       "name": "buoy",
       "supercategory": "buoy"
     },
     {
-      "id": 67,
+      "id": 68,
       "name": "buoy_mooring_ball",
       "supercategory": "buoy"
     },
     {
-      "id": 68,
+      "id": 69,
       "name": "buoy_fishing_buoy",
       "supercategory": "buoy"
     }

@@ -6,7 +6,7 @@ train: train.txt
 val: val.txt
 test: test.txt
 
-# Classes (69 NOMaD classes)
+# Classes (70 NOMaD classes)
 names:
   0: boat
   1: boat_tug
@@ -58,22 +58,23 @@ names:
   47: structure_dock
   48: structure_pier
   49: structure_bridge
-  50: structure_unknown_structure
-  51: nav_aid
-  52: nav_aid_port_side_green_floating_channel_marker
-  53: nav_aid_starboard_side_red_floating_channel_marker
-  54: nav_aid_yellow-floating-hazard-marker
-  55: nav_aid_junction_preferred_channel_to_stbd
-  56: nav_aid_junction_preferred_channel_to_port
-  57: nav_aid_safe-water-floating-channel-marker
-  58: nav_aid_regulatory_markers
-  59: nav_aid_range_marker
-  60: nav_aid_lighthouse
-  61: nav_aid_red_triangle_daymark
-  62: nav_aid_green_square_daymark
-  63: nav_aid_special_yellow_square_marker
-  64: nav_aid_special_yellow_triangle_marker
-  65: nav_aid_regulatory_marker
-  66: buoy
-  67: buoy_mooring_ball
-  68: buoy_fishing_buoy
+  50: structure_wind_turbine
+  51: structure_unknown_structure
+  52: nav_aid
+  53: nav_aid_port_side_green_floating_channel_marker
+  54: nav_aid_starboard_side_red_floating_channel_marker
+  55: nav_aid_yellow-floating-hazard-marker
+  56: nav_aid_junction_preferred_channel_to_stbd
+  57: nav_aid_junction_preferred_channel_to_port
+  58: nav_aid_safe-water-floating-channel-marker
+  59: nav_aid_regulatory_markers
+  60: nav_aid_range_marker
+  61: nav_aid_lighthouse
+  62: nav_aid_red_triangle_daymark
+  63: nav_aid_green_square_daymark
+  64: nav_aid_special_yellow_square_marker
+  65: nav_aid_special_yellow_triangle_marker
+  66: nav_aid_regulatory_marker
+  67: buoy
+  68: buoy_mooring_ball
+  69: buoy_fishing_buoy

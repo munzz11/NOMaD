@@ -6,11 +6,11 @@
 
 This repository contains the **annotation specification and class/super-class definitions** for NOMaD. It does not contain the imagery or annotations themselves; the distribution of those can be found below.
 
-NOMaD is an object classification spec focused on maritime navigation. This README documents the full class list (69 classes in 7 categories) and how to use super-class groupings to adapt the spec for your use case.
+NOMaD is an object classification spec focused on maritime navigation. This README documents the full class list (70 classes in 7 categories) and how to use super-class groupings to adapt the spec for your use case.
 
-- **Classes:** 69  
+- **Classes:** 70  
 - **Categories:** 7  
-- **Spec version:** 1.2.0 (2026)
+- **Spec version:** 1.3.0 (2026)
 
 ## Dataset
 
@@ -71,7 +71,7 @@ python scripts/sync_dataset.py \
 
 | Asset                               | Description                                                                                                                         |
 | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `detailed_class_specification.json` | Full 69-class spec with descriptions, visual characteristics, typical size range, and color markers.                                |
+| `detailed_class_specification.json` | Full 70-class spec with descriptions, visual characteristics, typical size range, and color markers.                                |
 | `coco_spec.json`                    | COCO-format category template for the same classes (for use with COCO-style annotations).                                           |
 | `super-classes/`                    | JSON files that define groupings of the main spec into fewer classes (e.g. `base_superclasses.json`). One file per grouping scheme. |
 | `scripts/sync_dataset.py`           | Downloads/syncs NOMaD dataset files from Hugging Face into local storage (`NOMAD_DATA_DIR` or `./data`).                            |
@@ -82,7 +82,7 @@ python scripts/sync_dataset.py \
 
 Super classes can be useful to transform the dataset for a specific use case. NOMaD is meant to have a very granular classification scheme that can be easily adapted to many areas of research in the maritime domain. For example, if you want a robust model without concern for classifying boat types, you might collapse boat classes into "large_boat" and "small_boat" super classes and drop type-specific granularity. If you're working on a model that geolocates clusters of fishing buoys from an ASV, you might keep only the granularity of the buoy classes and collapse the rest specs classes.
 
-The `**super-classes/**` folder holds one JSON file per grouping scheme. The main spec is `detailed_class_specification.json` in the repo root (69 classes). Each super-class JSON defines **groups** with:
+The `**super-classes/**` folder holds one JSON file per grouping scheme. The main spec is `detailed_class_specification.json` in the repo root (70 classes). Each super-class JSON defines **groups** with:
 
 - `**name`** – The class name for that group.
 - `**subclass_ids**` – Main-spec class IDs that belong to this group.
@@ -184,7 +184,8 @@ One file = one way of grouping the main spec into fewer classes. Add new files f
 | 47  | structure - dock              | Dock or wharf structure                                   | Horizontal platform extending into water, often with pilings                        | 10-500+ meters                             | Variable, often wood, concrete, or metal                  |
 | 48  | structure - pier              | Pier or jetty structure                                   | Narrow structure extending into water, often perpendicular to shore                 | 5-200+ meters                              | Variable, often wood, concrete, or metal                  |
 | 49  | structure - bridge            | Bridge structure over waterway                            | Large spanning structure, supports visible                                          | 50-1000+ meters span                       | Variable, often gray or painted                           |
-| 50  | structure - unknown structure | Unidentified or unclassified structure                    | Variable                                                                            | Variable                                   | Variable                                                  |
+| 50  | structure - wind turbine      | Offshore or coastal wind turbine installation               | Tall tower with nacelle and rotating blades; often in arrays; slender vertical profile above waterline | Tower height roughly 80-200+ meters (blade tip higher) | Often white or light gray tower; blades white or pale |
+| 51  | structure - unknown structure | Unidentified or unclassified structure                    | Variable                                                                            | Variable                                   | Variable                                                  |
 
 
 ## Nav Aid
@@ -192,21 +193,21 @@ One file = one way of grouping the main spec into fewer classes. Add new files f
 
 | ID  | Class name                                           | Description                                                                           | Visual characteristics                                                          | Size range            | Color markers                          |
 | --- | ---------------------------------------------------- | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | --------------------- | -------------------------------------- |
-| 51  | nav aid                                              | Generic navigation aid when specific type cannot be determined                        | Variable nav aid characteristics, unable to classify into specific nav aid type | Variable              | Variable                               |
-| 52  | nav aid - port side green floating channel marker    | Green floating channel marker indicating port side of channel (US: keep to starboard) | Green can or nun buoy, may have number or letter                                | 0.5-2 meters          | Green                                  |
-| 53  | nav aid - starboard side red floating channel marker | Red floating channel marker indicating starboard side of channel (US: keep to port)   | Red nun or can buoy, may have number or letter                                  | 0.5-2 meters          | Red                                    |
-| 54  | nav aid - yellow-floating-hazard-marker              | Yellow floating marker indicating hazard or special area                              | Yellow buoy or marker, may have various shapes                                  | 0.5-2 meters          | Yellow                                 |
-| 55  | nav aid - junction preferred channel to stbd         | Junction marker indicating preferred channel to starboard                             | Red and green horizontal bands, top band red                                    | 0.5-2 meters          | Red and green                          |
-| 56  | nav aid - junction preferred channel to port         | Junction marker indicating preferred channel to port                                  | Red and green horizontal bands, top band green                                  | 0.5-2 meters          | Red and green                          |
-| 57  | nav aid - safe-water-floating-channel-marker         | Safe water marker indicating navigable water all around                               | Red and white vertical stripes, spherical or pillar shape                       | 0.5-2 meters          | Red and white                          |
-| 58  | nav aid - regulatory markers                         | Regulatory marker indicating rules or restrictions                                    | White with orange border and symbol, various shapes                             | 0.5-2 meters          | White and orange                       |
-| 59  | nav aid - range marker                               | Range marker for alignment navigation                                                 | Two markers in line, often daymarks or lights                                   | Variable              | Variable, often red or white           |
-| 60  | nav aid - lighthouse                                 | Lighthouse structure for navigation                                                   | Tall tower structure, often distinctive shape and color                         | 10-100+ meters height | Variable, often white, red, or striped |
-| 61  | nav aid - red triangle daymark                       | Red triangular daymark for navigation                                                 | Red triangular shape, often on post or structure                                | 0.5-2 meters          | Red                                    |
-| 62  | nav aid - green square daymark                       | Green square daymark for navigation                                                   | Green square shape, often on post or structure                                  | 0.5-2 meters          | Green                                  |
-| 63  | nav aid - special yellow square marker               | Special yellow square marker                                                          | Yellow square shape                                                             | 0.5-2 meters          | Yellow                                 |
-| 64  | nav aid - special yellow triangle marker             | Special yellow triangle marker                                                        | Yellow triangular shape                                                         | 0.5-2 meters          | Yellow                                 |
-| 65  | nav aid - regulatory marker                          | Regulatory marker (alternative classification)                                        | White with orange border and symbol                                             | 0.5-2 meters          | White and orange                       |
+| 52  | nav aid                                              | Generic navigation aid when specific type cannot be determined                        | Variable nav aid characteristics, unable to classify into specific nav aid type | Variable              | Variable                               |
+| 53  | nav aid - port side green floating channel marker    | Green floating channel marker indicating port side of channel (US: keep to starboard) | Green can or nun buoy, may have number or letter                                | 0.5-2 meters          | Green                                  |
+| 54  | nav aid - starboard side red floating channel marker | Red floating channel marker indicating starboard side of channel (US: keep to port)   | Red nun or can buoy, may have number or letter                                  | 0.5-2 meters          | Red                                    |
+| 55  | nav aid - yellow-floating-hazard-marker              | Yellow floating marker indicating hazard or special area                              | Yellow buoy or marker, may have various shapes                                  | 0.5-2 meters          | Yellow                                 |
+| 56  | nav aid - junction preferred channel to stbd         | Junction marker indicating preferred channel to starboard                             | Red and green horizontal bands, top band red                                    | 0.5-2 meters          | Red and green                          |
+| 57  | nav aid - junction preferred channel to port         | Junction marker indicating preferred channel to port                                  | Red and green horizontal bands, top band green                                  | 0.5-2 meters          | Red and green                          |
+| 58  | nav aid - safe-water-floating-channel-marker         | Safe water marker indicating navigable water all around                               | Red and white vertical stripes, spherical or pillar shape                       | 0.5-2 meters          | Red and white                          |
+| 59  | nav aid - regulatory markers                         | Regulatory marker indicating rules or restrictions                                    | White with orange border and symbol, various shapes                             | 0.5-2 meters          | White and orange                       |
+| 60  | nav aid - range marker                               | Range marker for alignment navigation                                                 | Two markers in line, often daymarks or lights                                   | Variable              | Variable, often red or white           |
+| 61  | nav aid - lighthouse                                 | Lighthouse structure for navigation                                                   | Tall tower structure, often distinctive shape and color                         | 10-100+ meters height | Variable, often white, red, or striped |
+| 62  | nav aid - red triangle daymark                       | Red triangular daymark for navigation                                                 | Red triangular shape, often on post or structure                                | 0.5-2 meters          | Red                                    |
+| 63  | nav aid - green square daymark                       | Green square daymark for navigation                                                   | Green square shape, often on post or structure                                  | 0.5-2 meters          | Green                                  |
+| 64  | nav aid - special yellow square marker               | Special yellow square marker                                                          | Yellow square shape                                                             | 0.5-2 meters          | Yellow                                 |
+| 65  | nav aid - special yellow triangle marker             | Special yellow triangle marker                                                        | Yellow triangular shape                                                         | 0.5-2 meters          | Yellow                                 |
+| 66  | nav aid - regulatory marker                          | Regulatory marker (alternative classification)                                        | White with orange border and symbol                                             | 0.5-2 meters          | White and orange                       |
 
 
 ## Buoy
@@ -214,9 +215,9 @@ One file = one way of grouping the main spec into fewer classes. Add new files f
 
 | ID  | Class name          | Description                                          | Visual characteristics                                              | Size range              | Color markers                                       |
 | --- | ------------------- | ---------------------------------------------------- | ------------------------------------------------------------------- | ----------------------- | --------------------------------------------------- |
-| 66  | buoy                | Generic buoy when specific type cannot be determined | Floating marker or buoy, unable to classify into specific buoy type | Variable                | Variable                                            |
-| 67  | buoy - mooring ball | Mooring ball for vessel mooring                      | Spherical or cylindrical float, often white or blue                 | 0.3-1.0 meters diameter | Often white, blue, or yellow                        |
-| 68  | buoy - fishing buoy | Fishing buoy marking fishing gear or trap            | Small float, often brightly colored, may have flag                  | 0.2-0.5 meters diameter | Variable, often bright colors (orange, yellow, red) |
+| 67  | buoy                | Generic buoy when specific type cannot be determined | Floating marker or buoy, unable to classify into specific buoy type | Variable                | Variable                                            |
+| 68  | buoy - mooring ball | Mooring ball for vessel mooring                      | Spherical or cylindrical float, often white or blue                 | 0.3-1.0 meters diameter | Often white, blue, or yellow                        |
+| 69  | buoy - fishing buoy | Fishing buoy marking fishing gear or trap            | Small float, often brightly colored, may have flag                  | 0.2-0.5 meters diameter | Variable, often bright colors (orange, yellow, red) |
 
 
 ---
