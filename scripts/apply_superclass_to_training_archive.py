@@ -17,6 +17,14 @@ from pathlib import Path
 _REPO_ROOT = Path(__file__).resolve().parent.parent
 _DEFAULT_COCO_SPEC = _REPO_ROOT / "coco_spec.json"
 
+# Legacy class names that are no longer in the spec but should resolve to a
+# current spec class (by name) instead of being dropped. For example, the old
+# generic ``buoy`` super-class was renamed to ``buoy_misc``.
+_LEGACY_NAME_ALIASES = {
+    "buoy": "buoy_misc",
+    "structure": "structure_misc",
+}
+
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
@@ -203,6 +211,8 @@ def main() -> int:
                 f"Annotation id {ann.get('id')}: category_id {arch_cid!r} has no class name in "
                 f"input categories. Fix the archive or add a categories entry."
             )
+        if class_name not in name_to_spec_id and class_name in _LEGACY_NAME_ALIASES:
+            class_name = _LEGACY_NAME_ALIASES[class_name]
         if class_name not in name_to_spec_id:
             if args.unknown_name == "error":
                 raise SystemExit(

@@ -3,21 +3,12 @@
     "version": "1.3.0",
     "description": "Navigational Objects Maritime Annotated Dataset",
     "created_date": "2026",
-    "total_classes": 70,
-    "parent_categories": 7
+    "total_classes": 66,
+    "parent_categories": 8
   },
   "classes": [
     {
       "id": 0,
-      "name": "boat",
-      "parent_category": "boat",
-      "description": "Generic boat or vessel when specific type cannot be determined",
-      "visual_characteristics": "Variable vessel characteristics, unable to classify into specific boat type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 1,
       "name": "boat - tug",
       "parent_category": "boat",
       "description": "Tugboat used for towing or pushing other vessels",
@@ -26,7 +17,7 @@
       "color_markers": "Often red, yellow, or orange hull"
     },
     {
-      "id": 2,
+      "id": 1,
       "name": "boat - sailboat under power",
       "parent_category": "boat",
       "description": "Sailboat operating with engine power, sails down",
@@ -35,7 +26,7 @@
       "color_markers": "Variable, white hulls common"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "boat - sailboat under sail",
       "parent_category": "boat",
       "description": "Sailboat operating solely under wind power",
@@ -44,7 +35,7 @@
       "color_markers": "Variable, white hulls and sails common"
     },
     {
-      "id": 4,
+      "id": 3,
       "name": "boat - submarine",
       "parent_category": "boat",
       "description": "Submersible naval vessel",
@@ -53,7 +44,7 @@
       "color_markers": "Typically dark gray or black"
     },
     {
-      "id": 5,
+      "id": 4,
       "name": "boat - warship",
       "parent_category": "boat",
       "description": "Military naval vessel",
@@ -62,7 +53,7 @@
       "color_markers": "Gray hull, military gray paint scheme"
     },
     {
-      "id": 6,
+      "id": 5,
       "name": "boat - merchant ship",
       "parent_category": "boat",
       "description": "Commercial cargo or container vessel",
@@ -71,7 +62,7 @@
       "color_markers": "Often red hull below waterline, variable above"
     },
     {
-      "id": 7,
+      "id": 6,
       "name": "boat - commercial fishing boat",
       "parent_category": "boat",
       "description": "Commercial fishing vessel with nets, trawls, or other fishing equipment",
@@ -80,7 +71,7 @@
       "color_markers": "Variable, often white or blue hull"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "boat - recreational fishing boat",
       "parent_category": "boat",
       "description": "Small to medium recreational fishing vessel",
@@ -89,7 +80,7 @@
       "color_markers": "Variable, often bright colors"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "boat - pleasure craft",
       "parent_category": "boat",
       "description": "Recreational motorboat or yacht",
@@ -98,7 +89,7 @@
       "color_markers": "Variable, often white or bright colors"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "boat - personal watercraft",
       "parent_category": "boat",
       "description": "Jet ski, wave runner, or similar small personal watercraft",
@@ -107,7 +98,7 @@
       "color_markers": "Often bright colors, white common"
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "boat - kayak_canoe",
       "parent_category": "boat",
       "description": "Human-powered kayak or canoe",
@@ -116,7 +107,7 @@
       "color_markers": "Variable, often bright colors for visibility"
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "boat - seaplanes",
       "parent_category": "boat",
       "description": "Aircraft capable of landing on water",
@@ -125,7 +116,7 @@
       "color_markers": "Variable, often white or bright colors"
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "boat - ferry",
       "parent_category": "boat",
       "description": "Passenger or vehicle ferry vessel",
@@ -134,7 +125,7 @@
       "color_markers": "Variable, often company colors"
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "boat - barge",
       "parent_category": "boat",
       "description": "Flat-bottomed cargo vessel, often towed",
@@ -143,7 +134,7 @@
       "color_markers": "Often rust-colored or gray"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "boat - dredger",
       "parent_category": "boat",
       "description": "Vessel equipped for dredging operations",
@@ -152,7 +143,7 @@
       "color_markers": "Often yellow or orange equipment"
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "boat - law enforcement",
       "parent_category": "boat",
       "description": "Law enforcement or coast guard vessel",
@@ -161,7 +152,7 @@
       "color_markers": "Often blue, white, or official colors"
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "boat - unclassified boat",
       "parent_category": "boat",
       "description": "Boat that cannot be classified into specific categories",
@@ -170,7 +161,7 @@
       "color_markers": "Variable"
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "boat - drilling ship",
       "parent_category": "boat",
       "description": "Offshore drilling platform or vessel",
@@ -179,16 +170,7 @@
       "color_markers": "Often yellow or orange equipment, white or gray hull"
     },
     {
-      "id": 19,
-      "name": "dayshape",
-      "parent_category": "dayshape",
-      "description": "Generic day shape or navigation status indicator when specific type cannot be determined",
-      "visual_characteristics": "Variable dayshape characteristics, unable to classify into specific dayshape type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 20,
+      "id": 18,
       "name": "dayshape - not under command",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel not under command (two black balls)",
@@ -197,7 +179,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 21,
+      "id": 19,
       "name": "dayshape - restricted in ability to maneuver",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel restricted in ability to maneuver (ball-diamond-ball)",
@@ -206,7 +188,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 22,
+      "id": 20,
       "name": "dayshape - constrained by draft",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel constrained by draft (cylinder)",
@@ -215,7 +197,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 23,
+      "id": 21,
       "name": "dayshape - pilot vessel on duty",
       "parent_category": "dayshape",
       "description": "Day shape indicating pilot vessel on duty (ball over flag)",
@@ -224,7 +206,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 24,
+      "id": 22,
       "name": "dayshape - anchored",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel at anchor (ball)",
@@ -233,7 +215,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 25,
+      "id": 23,
       "name": "dayshape - vessel under sail and power",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel under sail and power (cone apex down)",
@@ -242,7 +224,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 26,
+      "id": 24,
       "name": "dayshape - towing or towed vessel",
       "parent_category": "dayshape",
       "description": "Day shape indicating towing or towed vessel (diamond)",
@@ -251,7 +233,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 27,
+      "id": 25,
       "name": "dayshape - fishing with restricted maneuverability",
       "parent_category": "dayshape",
       "description": "Day shape indicating fishing vessel with restricted maneuverability (two cones apex together)",
@@ -260,7 +242,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 28,
+      "id": 26,
       "name": "dayshape - minesweeping",
       "parent_category": "dayshape",
       "description": "Day shape indicating minesweeping operations (three balls)",
@@ -269,7 +251,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 29,
+      "id": 27,
       "name": "dayshape - aground",
       "parent_category": "dayshape",
       "description": "Day shape indicating vessel aground (three balls)",
@@ -278,16 +260,7 @@
       "color_markers": "Black"
     },
     {
-      "id": 30,
-      "name": "flag",
-      "parent_category": "flag",
-      "description": "Generic flag when specific type cannot be determined",
-      "visual_characteristics": "Variable flag characteristics, unable to classify into specific flag type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 31,
+      "id": 28,
       "name": "flag - dive flag",
       "parent_category": "flag",
       "description": "Diver down flag (red with white diagonal stripe)",
@@ -296,7 +269,7 @@
       "color_markers": "Red and white"
     },
     {
-      "id": 32,
+      "id": 29,
       "name": "flag - pilot flag",
       "parent_category": "flag",
       "description": "Pilot flag indicating pilot vessel or pilot on board",
@@ -305,16 +278,7 @@
       "color_markers": "White and red"
     },
     {
-      "id": 33,
-      "name": "lights",
-      "parent_category": "lights",
-      "description": "Generic navigation lights when specific configuration cannot be determined",
-      "visual_characteristics": "Variable lights characteristics, unable to classify into specific lights type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 34,
+      "id": 30,
       "name": "lights - power driven vessels",
       "parent_category": "lights",
       "description": "Navigation lights for power-driven vessel (red port, green starboard, white stern)",
@@ -323,7 +287,7 @@
       "color_markers": "Red, green, white"
     },
     {
-      "id": 35,
+      "id": 31,
       "name": "lights - power driven vessel towing < 200 m",
       "parent_category": "lights",
       "description": "Navigation lights for power vessel towing with tow length less than 200 meters",
@@ -332,7 +296,7 @@
       "color_markers": "Red, green, white, yellow"
     },
     {
-      "id": 36,
+      "id": 32,
       "name": "lights - power driven vessel towing > 200 m",
       "parent_category": "lights",
       "description": "Navigation lights for power vessel towing with tow length greater than 200 meters",
@@ -341,7 +305,7 @@
       "color_markers": "Red, green, white"
     },
     {
-      "id": 37,
+      "id": 33,
       "name": "lights - fishing trawler",
       "parent_category": "lights",
       "description": "Navigation lights for fishing trawler (red over white)",
@@ -350,7 +314,7 @@
       "color_markers": "Red and white"
     },
     {
-      "id": 38,
+      "id": 34,
       "name": "lights - fishing not trawling",
       "parent_category": "lights",
       "description": "Navigation lights for fishing vessel not trawling (red over red)",
@@ -359,7 +323,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 39,
+      "id": 35,
       "name": "lights - not under command",
       "parent_category": "lights",
       "description": "Navigation lights for vessel not under command (red over red)",
@@ -368,7 +332,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 40,
+      "id": 36,
       "name": "lights - restricted in ability to maneuver",
       "parent_category": "lights",
       "description": "Navigation lights for vessel restricted in ability to maneuver (red-white-red)",
@@ -377,7 +341,7 @@
       "color_markers": "Red and white"
     },
     {
-      "id": 41,
+      "id": 37,
       "name": "lights - constrained by draft",
       "parent_category": "lights",
       "description": "Navigation lights for vessel constrained by draft (three red lights)",
@@ -386,7 +350,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 42,
+      "id": 38,
       "name": "lights - pilot vessel on duty",
       "parent_category": "lights",
       "description": "Navigation lights for pilot vessel on duty (white over red)",
@@ -395,7 +359,7 @@
       "color_markers": "White and red"
     },
     {
-      "id": 43,
+      "id": 39,
       "name": "lights - anchored or aground",
       "parent_category": "lights",
       "description": "Navigation lights for vessel at anchor or aground (white all around)",
@@ -404,16 +368,7 @@
       "color_markers": "White"
     },
     {
-      "id": 44,
-      "name": "structure",
-      "parent_category": "structure",
-      "description": "Generic structure when specific type cannot be determined",
-      "visual_characteristics": "Variable structure characteristics, unable to classify into specific structure type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 45,
+      "id": 40,
       "name": "structure - drilling platform",
       "parent_category": "structure",
       "description": "Offshore drilling platform or rig",
@@ -422,7 +377,7 @@
       "color_markers": "Often yellow or orange equipment, white or gray structure"
     },
     {
-      "id": 46,
+      "id": 41,
       "name": "structure - piling",
       "parent_category": "structure",
       "description": "Vertical piling or post structure",
@@ -431,7 +386,7 @@
       "color_markers": "Variable, often wood, concrete, or metal"
     },
     {
-      "id": 47,
+      "id": 42,
       "name": "structure - dock",
       "parent_category": "structure",
       "description": "Dock or wharf structure",
@@ -440,7 +395,7 @@
       "color_markers": "Variable, often wood, concrete, or metal"
     },
     {
-      "id": 48,
+      "id": 43,
       "name": "structure - pier",
       "parent_category": "structure",
       "description": "Pier or jetty structure",
@@ -449,7 +404,7 @@
       "color_markers": "Variable, often wood, concrete, or metal"
     },
     {
-      "id": 49,
+      "id": 44,
       "name": "structure - bridge",
       "parent_category": "structure",
       "description": "Bridge structure over waterway",
@@ -458,7 +413,7 @@
       "color_markers": "Variable, often gray or painted"
     },
     {
-      "id": 50,
+      "id": 45,
       "name": "structure - wind turbine",
       "parent_category": "structure",
       "description": "Offshore or coastal wind turbine installation",
@@ -467,7 +422,7 @@
       "color_markers": "Often white or light gray tower; blades white or pale"
     },
     {
-      "id": 51,
+      "id": 46,
       "name": "structure - unknown structure",
       "parent_category": "structure",
       "description": "Unidentified or unclassified structure",
@@ -476,16 +431,16 @@
       "color_markers": "Variable"
     },
     {
-      "id": 52,
-      "name": "nav aid",
-      "parent_category": "nav aid",
-      "description": "Generic navigation aid when specific type cannot be determined",
-      "visual_characteristics": "Variable nav aid characteristics, unable to classify into specific nav aid type",
+      "id": 47,
+      "name": "structure - misc",
+      "parent_category": "structure",
+      "description": "Generic structure when specific type cannot be determined",
+      "visual_characteristics": "Variable structure characteristics, unable to classify into specific structure type",
       "typical_size_range": "Variable",
       "color_markers": "Variable"
     },
     {
-      "id": 53,
+      "id": 48,
       "name": "nav aid - port side green floating channel marker",
       "parent_category": "nav aid",
       "description": "Green floating channel marker indicating port side of channel (US: keep to starboard)",
@@ -494,7 +449,7 @@
       "color_markers": "Green"
     },
     {
-      "id": 54,
+      "id": 49,
       "name": "nav aid - starboard side red floating channel marker",
       "parent_category": "nav aid",
       "description": "Red floating channel marker indicating starboard side of channel (US: keep to port)",
@@ -503,7 +458,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 55,
+      "id": 50,
       "name": "nav aid - yellow-floating-hazard-marker",
       "parent_category": "nav aid",
       "description": "Yellow floating marker indicating hazard or special area",
@@ -512,7 +467,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 56,
+      "id": 51,
       "name": "nav aid - junction preferred channel to stbd",
       "parent_category": "nav aid",
       "description": "Junction marker indicating preferred channel to starboard",
@@ -521,7 +476,7 @@
       "color_markers": "Red and green"
     },
     {
-      "id": 57,
+      "id": 52,
       "name": "nav aid - junction preferred channel to port",
       "parent_category": "nav aid",
       "description": "Junction marker indicating preferred channel to port",
@@ -530,7 +485,7 @@
       "color_markers": "Red and green"
     },
     {
-      "id": 58,
+      "id": 53,
       "name": "nav aid - safe-water-floating-channel-marker",
       "parent_category": "nav aid",
       "description": "Safe water marker indicating navigable water all around",
@@ -539,7 +494,7 @@
       "color_markers": "Red and white"
     },
     {
-      "id": 59,
+      "id": 54,
       "name": "nav aid - regulatory markers",
       "parent_category": "nav aid",
       "description": "Regulatory marker indicating rules or restrictions",
@@ -548,7 +503,7 @@
       "color_markers": "White and orange"
     },
     {
-      "id": 60,
+      "id": 55,
       "name": "nav aid - range marker",
       "parent_category": "nav aid",
       "description": "Range marker for alignment navigation",
@@ -557,7 +512,7 @@
       "color_markers": "Variable, often red or white"
     },
     {
-      "id": 61,
+      "id": 56,
       "name": "nav aid - lighthouse",
       "parent_category": "nav aid",
       "description": "Lighthouse structure for navigation",
@@ -566,7 +521,7 @@
       "color_markers": "Variable, often white, red, or striped"
     },
     {
-      "id": 62,
+      "id": 57,
       "name": "nav aid - red triangle daymark",
       "parent_category": "nav aid",
       "description": "Red triangular daymark for navigation",
@@ -575,7 +530,7 @@
       "color_markers": "Red"
     },
     {
-      "id": 63,
+      "id": 58,
       "name": "nav aid - green square daymark",
       "parent_category": "nav aid",
       "description": "Green square daymark for navigation",
@@ -584,7 +539,7 @@
       "color_markers": "Green"
     },
     {
-      "id": 64,
+      "id": 59,
       "name": "nav aid - special yellow square marker",
       "parent_category": "nav aid",
       "description": "Special yellow square marker",
@@ -593,7 +548,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 65,
+      "id": 60,
       "name": "nav aid - special yellow triangle marker",
       "parent_category": "nav aid",
       "description": "Special yellow triangle marker",
@@ -602,7 +557,7 @@
       "color_markers": "Yellow"
     },
     {
-      "id": 66,
+      "id": 61,
       "name": "nav aid - regulatory marker",
       "parent_category": "nav aid",
       "description": "Regulatory marker (alternative classification)",
@@ -611,16 +566,7 @@
       "color_markers": "White and orange"
     },
     {
-      "id": 67,
-      "name": "buoy",
-      "parent_category": "buoy",
-      "description": "Generic buoy when specific type cannot be determined",
-      "visual_characteristics": "Floating marker or buoy, unable to classify into specific buoy type",
-      "typical_size_range": "Variable",
-      "color_markers": "Variable"
-    },
-    {
-      "id": 68,
+      "id": 62,
       "name": "buoy - mooring ball",
       "parent_category": "buoy",
       "description": "Mooring ball for vessel mooring",
@@ -629,13 +575,31 @@
       "color_markers": "Often white, blue, or yellow"
     },
     {
-      "id": 69,
+      "id": 63,
       "name": "buoy - fishing buoy",
       "parent_category": "buoy",
       "description": "Fishing buoy marking fishing gear or trap",
       "visual_characteristics": "Small float, often brightly colored, may have flag",
       "typical_size_range": "0.2-0.5 meters diameter",
       "color_markers": "Variable, often bright colors (orange, yellow, red)"
+    },
+    {
+      "id": 64,
+      "name": "buoy - misc",
+      "parent_category": "buoy",
+      "description": "Generic buoy when specific type cannot be determined",
+      "visual_characteristics": "Floating marker or buoy, unable to classify into specific buoy type",
+      "typical_size_range": "Variable",
+      "color_markers": "Variable"
+    },
+    {
+      "id": 65,
+      "name": "misc - bird",
+      "parent_category": "misc",
+      "description": "Bird or flock of birds on or above the water",
+      "visual_characteristics": "Small avian form; may be in flight, floating, or perched; often in groups",
+      "typical_size_range": "0.1-2 meters wingspan",
+      "color_markers": "Variable (white, gray, brown, black common)"
     }
   ]
 }
