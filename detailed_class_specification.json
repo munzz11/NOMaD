@@ -441,18 +441,18 @@
     },
     {
       "id": 48,
-      "name": "nav aid - port side green floating channel marker",
+      "name": "nav aid - green floating channel marker",
       "parent_category": "nav aid",
-      "description": "Green floating channel marker indicating port side of channel (US: keep to starboard)",
+      "description": "Green floating channel marker",
       "visual_characteristics": "Green can or nun buoy, may have number or letter",
       "typical_size_range": "0.5-2 meters",
       "color_markers": "Green"
     },
     {
       "id": 49,
-      "name": "nav aid - starboard side red floating channel marker",
+      "name": "nav aid - red floating channel marker",
       "parent_category": "nav aid",
-      "description": "Red floating channel marker indicating starboard side of channel (US: keep to port)",
+      "description": "Red floating channel marker",
       "visual_characteristics": "Red nun or can buoy, may have number or letter",
       "typical_size_range": "0.5-2 meters",
       "color_markers": "Red"

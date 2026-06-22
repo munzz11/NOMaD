@@ -179,8 +179,8 @@ One file = one way of grouping the main spec into fewer classes. Add new files f
 
 | ID | Class name | Description | Visual characteristics | Size range | Color markers |
 | --- | --- | --- | --- | --- | --- |
-| 48 | nav aid - port side green floating channel marker | Green floating channel marker indicating port side of channel (US: keep to starboard) | Green can or nun buoy, may have number or letter | 0.5-2 meters | Green |
-| 49 | nav aid - starboard side red floating channel marker | Red floating channel marker indicating starboard side of channel (US: keep to port) | Red nun or can buoy, may have number or letter | 0.5-2 meters | Red |
+| 48 | nav aid - green floating channel marker | Green floating channel marker | Green can or nun buoy, may have number or letter | 0.5-2 meters | Green |
+| 49 | nav aid - red floating channel marker | Red floating channel marker | Red nun or can buoy, may have number or letter | 0.5-2 meters | Red |
 | 50 | nav aid - yellow-floating-hazard-marker | Yellow floating marker indicating hazard or special area | Yellow buoy or marker, may have various shapes | 0.5-2 meters | Yellow |
 | 51 | nav aid - junction preferred channel to stbd | Junction marker indicating preferred channel to starboard | Red and green horizontal bands, top band red | 0.5-2 meters | Red and green |
 | 52 | nav aid - junction preferred channel to port | Junction marker indicating preferred channel to port | Red and green horizontal bands, top band green | 0.5-2 meters | Red and green |

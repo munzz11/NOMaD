@@ -54,6 +54,12 @@ _REQUIRED_TOP_KEYS = ("categories", "images", "annotations")
 _LEGACY_NAME_ALIASES = {
     "buoy": "buoy_misc",
     "structure": "structure_misc",
+    "nav_aid_port_side_green_floating_channel_marker": (
+        "nav_aid_green_floating_channel_marker"
+    ),
+    "nav_aid_starboard_side_red_floating_channel_marker": (
+        "nav_aid_red_floating_channel_marker"
+    ),
 }
 
 

@@ -256,12 +256,12 @@
     },
     {
       "id": 48,
-      "name": "nav_aid_port_side_green_floating_channel_marker",
+      "name": "nav_aid_green_floating_channel_marker",
       "supercategory": "nav aid"
     },
     {
       "id": 49,
-      "name": "nav_aid_starboard_side_red_floating_channel_marker",
+      "name": "nav_aid_red_floating_channel_marker",
       "supercategory": "nav aid"
     },
     {

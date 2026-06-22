@@ -57,8 +57,8 @@ names:
   45: structure_wind_turbine
   46: structure_unknown_structure
   47: structure_misc
-  48: nav_aid_port_side_green_floating_channel_marker
-  49: nav_aid_starboard_side_red_floating_channel_marker
+  48: nav_aid_green_floating_channel_marker
+  49: nav_aid_red_floating_channel_marker
   50: nav_aid_yellow-floating-hazard-marker
   51: nav_aid_junction_preferred_channel_to_stbd
   52: nav_aid_junction_preferred_channel_to_port
